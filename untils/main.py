@@ -1,6 +1,12 @@
-import json
+from untils import get_operation
+
+
+file_json = 'data/operations.json'
+
 
 if __name__ == '__main__':
-    with open('data/operations.json') as file:
-        d = json.load(file)
-    print(d)
+    operation = get_operation(file_json)
+
+    #print(operation)
+
+
