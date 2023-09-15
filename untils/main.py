@@ -1,12 +1,12 @@
-from untils import get_operation
+from untils import get_operation, operation_executed
 
 
 file_json = 'data/operations.json'
 
 
 if __name__ == '__main__':
-    operation = get_operation(file_json)
+    operations = get_operation(file_json)
+    operation_executed(operations)
 
-    #print(operation)
 
 
