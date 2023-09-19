@@ -5,11 +5,10 @@ from datetime import datetime
 
 
 def get_operation(info):
-    """получаю json и преобразую в python формат"""
+    """полуяаю json и преобразую в python формат"""
     with open(info, 'r', encoding='utf-8') as file:
         operations = json.load(file)
 
-    print(type(operations))
     return operations
 
 
@@ -55,12 +54,10 @@ def check_time(oper):
 
         list_date.append(t1)
 
-    print(sorted(list_date))
     return sorted(list_date)
 
 
 def enter_info(time, oper):
-    print(oper)
     """ищу в json первые 5 дат которые добавил в массив и выписываю весь словарь в список"""
     operation_list = []
     cont = 0
