@@ -36,15 +36,20 @@ def write_in_single_list(great_json, way_correct_f_json):
 
 def get_correct_f(way_correct_f_json):
     with open(way_correct_f_json, 'r', encoding='utf-8') as file:
-        great_json_operations = json.load(file)
-        return great_json_operations
+        new_json_operations = json.load(file)
+        return new_json_operations
 
 
-def sort_json_operations(list_json_correct_operations):
-    items = list_json_correct_operations["information"]
-    print(items)
-    res = sorted(items, key=lambda user: user["date"])
-    items.sort(key=lambda x: x.get('date'), reverse=True)
+def add_in_list_date(operation):
+    date_list = []
+    for items in operation:
+        date_list.append(items["date"])
+    date_list_five = date_list[0:5]
+    return date_list_five
+
+
+def sort_json_operations(date_list):
+    res = sorted(date_list, key=lambda user: user["date"])
     return res
 
 
