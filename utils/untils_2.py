@@ -49,7 +49,7 @@ def add_in_list_date(operation):
 
 
 def sort_json_operations(date_list):
-    res = sorted(date_list, key=lambda user: user["date"])
+    res = sorted(date_list, key=lambda user: user, reverse=True)
     return res
 
 
