@@ -79,6 +79,16 @@ tomli = {version = "*", optional = true, markers = "python_full_version <= \"3.1
 toml = ["tomli"]
 
 [[package]]
+name = "env"
+version = "0.1.0"
+description = "Environment Variables for Humans"
+optional = false
+python-versions = "*"
+files = [
+    {file = "env-0.1.0.tar.gz", hash = "sha256:e07975087b08dd2aea45bf83447c7e21f43cf916bbc2a0722fceb66e54d03935"},
+]
+
+[[package]]
 name = "exceptiongroup"
 version = "1.1.3"
 description = "Backport of PEP 654 (exception groups)"
@@ -183,4 +193,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "6ef74564fbf8415e4664077e0829d34b74bcd301f3de22fcd3d0654f9bd8f396"
+content-hash = "dc040b5e9fb6a3949655dc0845c3728d30f74e7aec6c6be7ab69adee44931ba6"
