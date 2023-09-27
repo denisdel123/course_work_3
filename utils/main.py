@@ -1,7 +1,7 @@
 import pathlib
 from pathlib import Path
 
-from untils_2 import get_json_operations, change_format_date, write_in_single_list, \
+from utils_2 import get_json_operations, change_format_date, write_in_single_list, \
     get_correct_f, sort_json_operations, clear_correct_f, print_info, change_format_output, add_in_list_date
 
 FILE_URL_OPER = Path(__file__).parent.parent.joinpath("data").joinpath("operations.json")
