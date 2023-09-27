@@ -9,6 +9,7 @@ def get_json_operations(way_json):
 
 
 def change_format_date(corrected_state):
+    print(corrected_state)
     date_str = corrected_state['date']
     date_obj = datetime.strptime(date_str, "%Y-%m-%dT%H:%M:%S.%f")
     correct_date = date_obj.strftime("%d. %m. %Y")
@@ -49,6 +50,7 @@ def add_in_list_date(operation):
 
 
 def sort_json_operations(date_list):
+    print(date_list)
     res = sorted(date_list, key=lambda user: user, reverse=True)
     return res
 
